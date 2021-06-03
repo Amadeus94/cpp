@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// the char 'b' equal char('a' + 1)
+
+	int i=0;
+	int end='z'-'a';
+	while(i<end)
+		cout << char('a'+i) << endl; 
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main(){
+	//convert yen to kroner
+	const double kr_to_yen =17.36;
+	const double d_to_p =0.72;	
+	double value = 1;
+	char unit = ' ';
+
+	cout << "Please enter value and then a unit of type y(en) <=>  k(roner), p(ounds) <=> d(ollar)" << endl;
+	
+	cin >> value >> unit;
+
+	if(unit =='y')
+		cout << value << " yen in dkk is " << value/kr_to_yen;
+	else if(unit =='k')
+		cout << value << " dkk in yen is " << value*kr_to_yen;
+	else if(unit =='p')
+		cout << value << " pounds in dollars is " << value/d_to_p;
+	else if(unit =='d')
+		cout << value << " dollars in pounds is " << value*d_to_p;
+	else
+		cout << "sorry that is not valid";
+}

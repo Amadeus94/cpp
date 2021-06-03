@@ -1,0 +1,22 @@
+Using the GNU C++ compiler on a Unix/Linux system:
+
+Compiling, linking and executing a simple program consisting of two source
+files  "my_file1.cpp" and "my_file2.cpp"
+
+	> c++ -o my_program my_file1.cpp my_file2.cpp
+	> ./my_program
+
+---
+Windows:
+
+	> gcc my_file1.cpp my_file2.cpp -o my_program
+
+
+	> c++ -o my_program my_file1.cpp my_file2.cpp
+	> ./my_program
+
+---
+Windows:
+
+	> gcc my_file1.cpp my_file2.cpp -o my_program
+
