@@ -1,0 +1,7 @@
+Integer Output Manipulation
+
+oct             use base-8 (octal) notation
+dec             use base-10 (decimal) notation
+hex             use base-16 (Hexadecimal) notation
+showbase        prefix 0 for octal and 0x for hexadecimal
+noshowbase      don't use prefixes

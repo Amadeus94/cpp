@@ -1,0 +1,9 @@
+Floating-point formats
+
+fixed       use fixed-point notation
+
+scientific  use mantissa and exponent notation 
+                the mantissa is always in the [1:10) range;
+                    that is, there is a single nonzero digit before the decimal point
+
+defaultfloat    choose fixed or scientific to give the numerically most accurate representation, within the precision of defaultfloat

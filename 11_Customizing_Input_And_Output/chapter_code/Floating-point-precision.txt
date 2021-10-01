@@ -1,0 +1,5 @@
+Floating-point precision
+
+defaultfloat        precision is the total number of digits
+scientific          precision is the number of digits after the decimal point
+fixed               precision is the number of digits after the decimal point
