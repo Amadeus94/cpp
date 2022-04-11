@@ -1,0 +1,12 @@
+///////////////////         Character Classification        ///////////////////////////
+isspace(c)          is c whitespace('', '\t','\n' etc.?)
+isalpha(c)          is c a letter ('a'...'z', 'A'...'Z') - note: NOT '_'
+isdigit(c)          is c a decimal digit ('0'...'9') 
+isxdigit(c)         is c a hexadecimal digit (decimal digit or 'a'..'f' or 'A'...'F') 
+isupper(c)          is c an uppercase letter? 
+islower(c)          is c an lowercase letter?
+isalnum(c)          is c a letter or a decimal digit?
+iscntrl(c)          ìs c a control character (ASCII 0..31 and 127) ?
+ispunct(c)          is c not a letter, digit, whitespace, or invisible control character?
+isprint(c)          is c printable(ASCII ''...'~')?
+isgraph(c)          is isalpha(c) or isdigit(c) or ispunct(c) (note:nont space)?

@@ -1,0 +1,3 @@
+//////////////      Character Case      ////////////////
+toupper(c)      c or c's uppercase equivalent
+tolower(c)      c or c's lowercase equivalent
