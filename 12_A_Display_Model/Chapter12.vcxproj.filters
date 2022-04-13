@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Chapter12">
+      <UniqueIdentifier>{a91b7082-98ec-4615-89d8-fd4b6d3b94f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter12\Chapter Code">
+      <UniqueIdentifier>{be009c5c-a9fd-4b18-a8e5-cfaf1ac951d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter12\Exercises">
+      <UniqueIdentifier>{3520c441-6b74-4217-894f-fe21201f0bfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\res">
+      <UniqueIdentifier>{ad693b5b-65b4-451f-bd5e-0e2a77f87a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter12\main">
+      <UniqueIdentifier>{dd1f5b74-ee78-4f52-8783-7bdcc55c4f2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter12\drill">
+      <UniqueIdentifier>{9a8c2a6e-b911-4ec9-9f87-8be0809aca68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter13">
+      <UniqueIdentifier>{254ccd6e-4c85-4330-8648-1517399c8b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter13\Drill">
+      <UniqueIdentifier>{db95c743-ad3d-4f15-b524-cd64b66a1399}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="12_3_A_First_Example.cpp">
+      <Filter>Source Files\Chapter12\Chapter Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Source Files\res</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>Source Files\res</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\res</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files\Chapter12\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Chapter12\main</Filter>
+    </ClCompile>
+    <ClCompile Include="12_7_2_An_Almost_Blank_window.cpp">
+      <Filter>Source Files\Chapter12\Chapter Code</Filter>
+    </ClCompile>
+    <ClCompile Include="drill.cpp">
+      <Filter>Source Files\Chapter12\drill</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise_01.cpp">
+      <Filter>Source Files\Chapter12\Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="main13.cpp">
+      <Filter>Source Files\Chapter13\Drill</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fltk.h">
+      <Filter>Source Files\res</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Source Files\res</Filter>
+    </ClInclude>
+    <ClInclude Include="Gui.h">
+      <Filter>Source Files\res</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Source Files\res</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_window.h">
+      <Filter>Source Files\res</Filter>
+    </ClInclude>
+    <ClInclude Include="std_lib_facilities.h">
+      <Filter>Source Files\res</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Source Files\res</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercise_01.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="html.html">
+      <Filter>Source Files\res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img.jpg">
+      <Filter>Source Files\res</Filter>
+    </Image>
+    <Image Include="nyan_cat.gif">
+      <Filter>Source Files\res</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
