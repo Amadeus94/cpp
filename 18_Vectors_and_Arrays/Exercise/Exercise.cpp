@@ -9,24 +9,33 @@ using namespace std;
 //		Use subscription[] 
 //	Use only the dereference operator * instead
 char* strdup(const char* ch){
+	// find length 
 	int length = 0;
-	for(int i=0; *ch+i!='\0'; i++){
-		length++;	
+
+	for(const char* ch2=ch; *ch2; ch2++){ // as long as ch2 != 0  .. \0
+		length++;
 	}
-	char* c = nullptr;
 
-	cout << "length of string is: " << length;
+	//allocate to heap
+	char *s= new char[length+1]; // add 1 to length because of \0
+	// copy values
+	for(int i=0; i<length+1;i++){
+		*(s+i)= *(ch+i);
+	}
+	*(s+length) = '\0';
 
-	return   c;
-
-
-
-
+	return s;
 }
  
 int main(){
-	char* c = new char[]{"hello"};
-	strdup(c);
+
+	cout << "starting.... \n";
+
+	const char* p = "hello";
+
+	char* pointer = strdup(p);
+
+	cout << pointer;  // standard output can print it 
 }
 
 
