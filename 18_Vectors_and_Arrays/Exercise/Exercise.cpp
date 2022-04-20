@@ -144,4 +144,24 @@ int main(){
 
 	cout << "==============	Exercise 03	=========================" << endl;
 	cout << result << endl;
+
+	//Ex04
+	//What happens if you give  strdup(), findx(), strcmp() and argument that is not a C-style string
+		// Try it with heap allocated C-strings
+		// -.		   Stack	--	
+	char nonCStyle[]= {'h','e','y'};
+	char nonCStyle2[]= {'h','e','y', 'o'};
+
+//	char nonCStyle2[] = new char[];
+
+	strdup(nonCStyle);
+	int i = strcmp(nonCStyle,nonCStyle2);
+
+	findx(nonCStyle2, nonCStyle);
+
+
+
+
+
+	
 }

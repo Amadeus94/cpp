@@ -1,0 +1,96 @@
+#include <string>
+#include <algorithm>
+#include  <iostream>
+#include <cstring>
+
+using namespace std;
+
+
+//String implementation:
+bool is_palindrome(const string& s){
+	string reverseString = ""; 
+	copy(s.rbegin(),s.rend(), reverseString);
+
+	cout << reverseString;
+
+
+
+
+      return true;
+}
+
+//array implementation
+bool is_palindrome(const char s[], int n){
+    int first =0;
+    int last = n-1;
+
+    while(first<last){ // we haven't reached the middle 
+        if(s[first]!=s[last])
+            return false;
+        ++first;
+        --last;
+    }
+    return true;
+}
+
+// Read characters into the array
+//  This is a way to do it safely (ie withotu risk of overflowing the array) 
+
+istream& read_word(istream& is, char* buffer, int max) {
+    // read at most max-1 characters from is into buffer
+    is.width(max); // read at most max-1 characters in the next >>
+                    // ie Width of the next formatted element to insert.
+                    //      if anna then width = 4 then will read all 4 
+
+
+    is >> buffer;   // read whitespace-terminated word,
+                    // add zero after the last charactger read into buffer
+
+
+    // More info:
+    //  setting the istream's width appropriately prevents buffer overflow fopr the next >> operation
+    //          However, it also means that we don't know if the read terminated by
+    //              whitespace or by buffer being full (  so that we need to read mroe characters)
+    //
+    //ð
+    return is;
+
+}
+
+
+//pointer implementation (Instead of using indices to identify characters - we could use pointers
+//bool is_palindrome(const char* first, const char* last){
+//    while(first<last){
+//        if(*first!= *last)
+//            return false;
+//        ++first;
+//        --last;
+//    }
+//    return true;
+//}
+
+// another impl of pointer palindrome
+bool is_palindrome(const char* first, const char* last){
+    if(first<last){
+        if(*first!=*last)
+            return false;
+        return is_palindrome(first+1, last-1); // recursive
+    }
+    return true;
+}
+
+int main(){
+	
+	//test string
+	string s1 = "anna";
+	string s2 = "ana";
+	string s3 = "ans";
+
+	cout << s1 << "is a palindrome: " << is_palindrome(s1);
+	cout << s2 << "is a palindrome: " << is_palindrome(s2);
+	cout << s3 << "is a palindrome: " << is_palindrome(s3);
+
+
+
+	return 1;
+}
